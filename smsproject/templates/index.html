@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Management System</title>
+</head>
+
+<body bgcolor="lightgrey">
+
+<h2 align="center">Student Academic Management System </h2>
+    <div align="center">
+    <a href="{% url 'home' %}">Home</a> &nbsp;&nbsp;&nbsp;
+    <a href="{% url 'about' %}">About</a> &nbsp;&nbsp;&nbsp;
+    <a href="{% url 'contact' %}">Contact</a> &nbsp;&nbsp;&nbsp;
+    <a href="{% url 'login' %}">Login</a> &nbsp;&nbsp;&nbsp;
+    </div>
+
+{% block 'body'%}
+<div align="center">
+    <h1>I am in Home Page</h1>
+</div>
+{% endblock %}
+
+</body>
+</html>
