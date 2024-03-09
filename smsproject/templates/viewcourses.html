@@ -1,0 +1,30 @@
+{% extends 'adminhome.html'%}
+
+{% block 'body' %}
+<div align="center">
+ <h3>View Course Details</h3>
+    <table border="2">
+        <tr>
+            <td>Department</td>
+            <td>Academic Year</td>
+            <td>Semester</td>
+            <td>Year</td>
+            <td>Course Code</td>
+            <td>Course Title</td>
+
+        </tr>
+        {% for course in coursesdata %}
+        <tr>
+            <td>{{course.department}}</td>
+            <td>{{course.acedemicyear}}</td>
+            <td>{{course.semester}}</td>
+            <td>{{course.year}}</td>
+            <td>{{course.coursecode}}</td>
+            <td>{{course.coursetitle}}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

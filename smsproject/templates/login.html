@@ -2,7 +2,8 @@
 
 {% block 'body' %}
 <h3 align="center">Admin Login</h3>
-<form>
+<form method="post" action="{% url 'checkadminlogin' %}">
+    {% csrf_token %}
     <table align="center">
         <tr>
             <td>

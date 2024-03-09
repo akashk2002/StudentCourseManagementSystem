@@ -20,12 +20,13 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('demo/',views.demofunction,name='demo'),
+    path('',views.demofunction,name='demo'),
     path('demo1/',views.demofunction1,name='demo1'),
     path('home/',views.homefuction,name='home'),
     path('about/',views.aboutfuction,name='about'),
     path('contact/',views.contactfuction,name='contact'),
     path('login/',views.loginfuction,name='login'),
+
 
     path("",include("adminapp.urls")),
     # path("",include("student.urls")),

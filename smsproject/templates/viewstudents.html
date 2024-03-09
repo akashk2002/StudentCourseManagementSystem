@@ -1,0 +1,40 @@
+{% extends 'adminhome.html'%}
+
+{% block 'body' %}
+<div align="center">
+ <h3>View Faculty Details</h3>
+    <table border="2">
+        <tr>
+            <td>Student ID</td>
+            <td>Student Name</td>
+            <td>Gender</td>
+            <td>Department</td>
+            <td>Program</td>
+            <td>Semester</td>
+            <td>Year</td>
+            <td>Password</td>
+            <td>Email</td>
+            <td>Contact</td>
+
+        </tr>
+        {% for student in studentdata %}
+        <tr>
+            <td>{{student.studentid}}</td>
+            <td>{{student.fullname}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.department}}</td>
+            <td>{{student.program}}</td>
+            <td>{{student.semester}}</td>
+            <td>{{student.year}}</td>
+            <td>{{student.password}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.contact}}</td>
+
+
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

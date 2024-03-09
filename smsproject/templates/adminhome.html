@@ -11,10 +11,16 @@
     <div align="center">
     <a href="{% url 'adminhome' %}">Home</a> &nbsp;&nbsp;&nbsp;
     <a href="">Change Password</a>&nbsp;&nbsp;&nbsp;
-    <a href="">Student</a>&nbsp;&nbsp;&nbsp;
-    <a href="">Faculty</a>&nbsp;&nbsp;&nbsp;
-    <a href="">Course</a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'viewstudents' %}">Student</a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'viewfaculty' %}">Faculty</a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'viewcourses' %}">Course</a>&nbsp;&nbsp;&nbsp;
     <a href="{% url 'adminlogout' %}">Logout</a>
     </div>
+
+{% block 'body' %}
+    <div align="center">
+        <p>I am in Admin Home Page</p>
+    </div>
+{% endblock%}
 </body>
 </html>

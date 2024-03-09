@@ -19,3 +19,4 @@ def contactfuction(request):
 
 def loginfuction(request):
     return render(request, "login.html")
+
